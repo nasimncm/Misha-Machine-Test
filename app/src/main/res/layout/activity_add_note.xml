@@ -90,7 +90,7 @@
         app:layout_constraintStart_toEndOf="@+id/btnItalic"
         app:layout_constraintTop_toBottomOf="@+id/idEdtNoteDescription" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btnSave"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -98,6 +98,7 @@
         android:layout_margin="20dp"
         android:backgroundTint="@color/black_shade_2"
         android:text="@string/button"
+        android:textColor="@color/white"
         android:textAllCaps="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
