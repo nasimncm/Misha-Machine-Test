@@ -7,6 +7,7 @@ import android.os.Handler
 import android.os.Looper
 import android.view.animation.AnimationUtils
 import android.widget.TextView
+import com.example.mishamachinetest.activities.MainActivity
 import com.example.mishamachinetest.databinding.ActivitySplashBinding
 
 class Splash : AppCompatActivity() {
