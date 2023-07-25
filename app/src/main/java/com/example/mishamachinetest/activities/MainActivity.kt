@@ -1,4 +1,4 @@
-package com.example.mishamachinetest
+package com.example.mishamachinetest.activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -9,8 +9,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.mishamachinetest.activities.AddNote
-import com.example.mishamachinetest.activities.NoteDetail
+import com.example.mishamachinetest.R
 import com.example.mishamachinetest.adapter.NoteRVAdapter
 import com.example.mishamachinetest.databinding.ActivityMainBinding
 import com.example.mishamachinetest.model.Note
@@ -26,7 +25,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        title = "Note App"
+        title = "Misha Note App"
         val toolbar = findViewById<Toolbar>(R.id.toolbar)
         setSupportActionBar(toolbar)
         noteRV = findViewById(R.id.idRVNotes)

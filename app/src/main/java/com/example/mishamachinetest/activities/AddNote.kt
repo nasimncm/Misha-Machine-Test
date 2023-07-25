@@ -12,7 +12,6 @@ import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.widget.Toolbar
 import androidx.lifecycle.ViewModelProvider
-import com.example.mishamachinetest.MainActivity
 import com.example.mishamachinetest.R
 import com.example.mishamachinetest.databinding.ActivityAddNoteBinding
 import com.example.mishamachinetest.model.Note

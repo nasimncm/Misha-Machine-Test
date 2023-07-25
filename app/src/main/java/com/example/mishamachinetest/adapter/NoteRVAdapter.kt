@@ -8,7 +8,7 @@ import android.widget.CheckBox
 import android.widget.TextView
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
-import com.example.mishamachinetest.MainActivity
+import com.example.mishamachinetest.activities.MainActivity
 import com.example.mishamachinetest.R
 import com.example.mishamachinetest.model.Note
 
