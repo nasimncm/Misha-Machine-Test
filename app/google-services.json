@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "980303943053",
+    "project_id": "misha-machine-test",
+    "storage_bucket": "misha-machine-test.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:980303943053:android:5ac0a2007e073172e999c4",
+        "android_client_info": {
+          "package_name": "com.example.mishamachinetest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "980303943053-o2jkgo4lcsj52n86q05nas9pkffdffhn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdNoknZ2waQMuL2A-Em-xvcP2D51OXl9A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "980303943053-o2jkgo4lcsj52n86q05nas9pkffdffhn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

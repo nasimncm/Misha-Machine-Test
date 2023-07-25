@@ -3,6 +3,7 @@
     <style name="Base.Theme.MishaMachineTest" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:statusBarColor">@color/black_shade_1</item>
     </style>
 
     <style name="Theme.MishaMachineTest" parent="Base.Theme.MishaMachineTest" />
