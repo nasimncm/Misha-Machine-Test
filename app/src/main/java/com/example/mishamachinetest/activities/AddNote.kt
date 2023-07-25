@@ -61,6 +61,49 @@ class AddNote : AppCompatActivity() {
             startActivity(Intent(applicationContext, MainActivity::class.java))
             this.finish()
         }
+        binding.btnBold.setOnClickListener {
+            buttonBold()
+        }
+        binding.btnItalic.setOnClickListener {
+            buttonItalics()
+        }
+        binding.btnUnderline.setOnClickListener {
+            buttonUnderline()
+        }
 
     }
+
+    private fun buttonBold() {
+        val spannableString: Spannable = SpannableStringBuilder(noteDescriptionEdt.text)
+        spannableString.setSpan(
+            StyleSpan(Typeface.BOLD),
+            noteDescriptionEdt.selectionStart,
+            noteDescriptionEdt.selectionEnd,
+            0
+        )
+        noteDescriptionEdt.setText(spannableString)
+    }
+
+    private fun buttonItalics() {
+        val spannableString: Spannable = SpannableStringBuilder(noteDescriptionEdt.text)
+        spannableString.setSpan(
+            StyleSpan(Typeface.ITALIC),
+            noteDescriptionEdt.selectionStart,
+            noteDescriptionEdt.selectionEnd,
+            0
+        )
+        noteDescriptionEdt.setText(spannableString)
+    }
+
+    private fun buttonUnderline() {
+        val spannableString: Spannable = SpannableStringBuilder(noteDescriptionEdt.text)
+        spannableString.setSpan(
+            UnderlineSpan(),
+            noteDescriptionEdt.selectionStart,
+            noteDescriptionEdt.selectionEnd,
+            0
+        )
+        noteDescriptionEdt.setText(spannableString)
+    }
+
 }
