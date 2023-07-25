@@ -23,7 +23,10 @@ class NoteRVAdapter(
         val checkBox = itemView.findViewById<CheckBox>(R.id.checkBox)
     }
 
-
+    fun deleteItem(i: Int) {
+        allNotes.removeAt(i)
+        notifyDataSetChanged()
+    }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.note_rv_item, parent, false)
@@ -38,6 +41,9 @@ class NoteRVAdapter(
         holder.noteTV.text = allNotes[position].noteTitle
         holder.timeTV.text = "Created at : " + allNotes[position].timeStamp
 
+        holder.itemView.setOnClickListener {
+            noteClickInterface.onNoteClick(allNotes[position])
+        }
         holder.checkBox.setOnClickListener {
             holder.noteTV.setTextColor(ContextCompat.getColor(context, R.color.gray))
             holder.timeTV.setTextColor(ContextCompat.getColor(context, R.color.gray))

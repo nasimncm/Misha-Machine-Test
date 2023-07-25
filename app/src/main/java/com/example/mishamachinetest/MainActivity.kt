@@ -52,5 +52,32 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, AddNote::class.java)
             startActivity(intent)
         }
+        //swipe to delete method
+        val swipe = object : Swipe() {
+            override fun onSwiped(viewHolder: RecyclerView.ViewHolder, direction: Int) {
+
+                when (direction) {
+                    ItemTouchHelper.LEFT -> {
+
+                        noteRVAdapter.deleteItem(viewHolder.adapterPosition)
+
+                    }
+                }
+
+                super.onSwiped(viewHolder, direction)
+            }
+        }
+        val touchHelper = ItemTouchHelper(swipe)
+        touchHelper.attachToRecyclerView(noteRV)
+    }
+
+    fun onNoteClick(note: Note) {
+        val intent = Intent(this, NoteDetail::class.java)
+        intent.putExtra("noteType", "Show")
+        intent.putExtra("noteTitle", note.noteTitle)
+        intent.putExtra("noteDescription", note.noteDescription)
+        intent.putExtra("noteID", note.id)
+        intent.putExtra("noteDate", note.timeStamp)
+        startActivity(intent)
     }
 }

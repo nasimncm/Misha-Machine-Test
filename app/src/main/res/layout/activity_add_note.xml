@@ -54,6 +54,42 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/idEdtNoteTitle" />
 
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black_shade_2"
+        android:text="@string/bold"
+        app:circularflow_radiusInDP="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/btnItalic"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idEdtNoteDescription" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnItalic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black_shade_2"
+        android:text="@string/italic"
+        app:circularflow_radiusInDP="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/btnUnderline"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnBold"
+        app:layout_constraintTop_toBottomOf="@+id/idEdtNoteDescription" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnUnderline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black_shade_2"
+        android:text="@string/underline"
+        app:circularflow_radiusInDP="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnItalic"
+        app:layout_constraintTop_toBottomOf="@+id/idEdtNoteDescription" />
+
     <Button
         android:id="@+id/btnSave"
         android:layout_width="match_parent"
@@ -62,7 +98,6 @@
         android:layout_margin="20dp"
         android:backgroundTint="@color/black_shade_2"
         android:text="@string/button"
-        android:textColor="@color/white"
         android:textAllCaps="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
